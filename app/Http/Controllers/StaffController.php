@@ -101,7 +101,7 @@ class StaffController extends Controller
         $staff = Staff::findOrFail($id);
         $staff->delete();
 
-        return redirect('/staffs')->with('completed', 'Student has been deleted');
+        return redirect('/staffs')->with('completed', 'Staff has been deleted');
     
     }
 }
